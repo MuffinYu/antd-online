@@ -12,22 +12,11 @@ export default class extends Component {
     loadingDoc: true
   };
   componentDidMount() {
-    this._fetchUrl('/components/button-cn/', [this.pickApi, this.pickWidget]);
-    // fetch('https://ant.design/components/button-cn/')
-    //   .then(res => {
-    //     return res.text();
-    //   })
-    //   .then(res => {
-    //     // console.log(res);
-    //     const parser = new DOMParser();
-    //     const doc = parser.parseFromString(res, 'text/html');
-    //   })
-    //   .catch(err => {
-    //     console.error('err', err);
-    //   });
+    // this._fetchUrl('/components/button-cn/', [this.pickApi, this.pickWidget]);
   }
 
   _fetchUrl(url, cbs = []) {
+    console.log('will fetch', ANTD + url);
     fetch(ANTD + url)
       .then(res => res.text())
       .then(res => {
@@ -77,6 +66,10 @@ export default class extends Component {
     // console.log('widgetList', nav[0].querySelectorAll('a[href^="/components"]'), widgetList);
   };
 
+  testFetch = () => {
+    this._fetchUrl('/components/button-cn/', [this.pickApi, this.pickWidget]);
+  }
+
   chooseWidget = url => {
     console.log('url', url);
     this.setState({
@@ -118,6 +111,7 @@ export default class extends Component {
               官方文档
             </a>
           </Row>
+          <button onClick={this.testFetch}>fetch</button>
         </Row>
         <Spin spinning={loadingDoc}>
           <div id="component-container" />
