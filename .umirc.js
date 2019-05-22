@@ -19,5 +19,5 @@ export default {
     ],
   ],
   cssModulesExcludes: ['components/ApiContainer/index.css', 'pages/index.css'],
-  outputPath: './doc'
+  outputPath: './docs'
 };
