@@ -57,7 +57,8 @@ export default class extends Component {
       .map(item => {
         return {
           name: item.innerText,
-          url: item.href.replace('http://localhost:8000', ''),
+          // url: item.href.replace('http://localhost:8000', ''),
+          url: item.href.match(/\/components\D+/)[0],
         };
       });
     this.setState({
@@ -67,7 +68,7 @@ export default class extends Component {
   };
 
   chooseWidget = url => {
-    // console.log('url', url);
+    console.log('url', url);
     this.setState({
       loadingDoc: true,
       currentComponent: url

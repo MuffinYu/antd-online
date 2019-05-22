@@ -24,7 +24,7 @@ export default {
   hash: true,
   copy: [
     {
-      from: './src/assets/antdesign-online.svg',
+      from: './src/assets/antdesign-online.png',
       to: './',
     },
   ],
