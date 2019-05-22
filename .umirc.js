@@ -25,7 +25,7 @@ export default {
   copy: [
     {
       from: './src/assets/antdesign-online.svg',
-      to: './docs',
+      to: './',
     },
   ],
 };

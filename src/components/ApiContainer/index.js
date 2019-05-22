@@ -12,7 +12,7 @@ export default class extends Component {
     loadingDoc: true
   };
   componentDidMount() {
-    // this._fetchUrl('/components/button-cn/', [this.pickApi, this.pickWidget]);
+    this._fetchUrl(this.state.currentComponent, [this.pickApi, this.pickWidget]);
   }
 
   _fetchUrl(url, cbs = []) {
@@ -66,12 +66,8 @@ export default class extends Component {
     // console.log('widgetList', nav[0].querySelectorAll('a[href^="/components"]'), widgetList);
   };
 
-  testFetch = () => {
-    this._fetchUrl('/components/button-cn/', [this.pickApi, this.pickWidget]);
-  }
-
   chooseWidget = url => {
-    console.log('url', url);
+    // console.log('url', url);
     this.setState({
       loadingDoc: true,
       currentComponent: url
@@ -111,7 +107,6 @@ export default class extends Component {
               官方文档
             </a>
           </Row>
-          <button onClick={this.testFetch}>fetch</button>
         </Row>
         <Spin spinning={loadingDoc}>
           <div id="component-container" />
