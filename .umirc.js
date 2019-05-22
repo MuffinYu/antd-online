@@ -21,4 +21,11 @@ export default {
   cssModulesExcludes: ['components/ApiContainer/index.css', 'pages/index.css'],
   outputPath: './docs',
   publicPath: 'https://muffinyu.github.io/antd-online/',
+  hash: true,
+  copy: [
+    {
+      from: './src/assets/antdesign-online.svg',
+      to: './docs',
+    },
+  ],
 };

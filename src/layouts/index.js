@@ -4,6 +4,7 @@ import { Row, Col } from 'antd';
 
 class BasicLayout extends Component {
   render(props) {
+    console.log('BasicLayout');
     return (
       <Row type="flex" justify="center">
         <Col xxl={18} xl={19} lg={20} msd={24}>

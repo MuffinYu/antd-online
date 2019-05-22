@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Row, Col, Icon, Tooltip, message } from 'antd';
-import styles from './index.css';
+import './index.css';
 import ReactEditor from '../components/ReactEditor';
 import ApiContainer from '../components/ApiContainer';
 import copy from 'copy-to-clipboard';
@@ -70,6 +70,8 @@ ReactDOM.render(
   }
 
   render() {
+    console.log('pages');
+
   const { sourceCode, error } = this.state;
   
   return (
