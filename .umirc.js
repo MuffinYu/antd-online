@@ -19,5 +19,6 @@ export default {
     ],
   ],
   cssModulesExcludes: ['components/ApiContainer/index.css', 'pages/index.css'],
-  outputPath: './docs'
+  outputPath: './docs',
+  publicPath: 'https://muffinyu.github.io/antd-online/',
 };
