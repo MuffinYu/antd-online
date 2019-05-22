@@ -34,13 +34,9 @@
 
 .editor {
   min-height: 300px;
-  /* width:  */
 }
 
 
-/* .gh-ico {
-  float: left;
-} */
 .gh-btn {
   padding: 2px 5px 2px 4px;
   color: #333;
@@ -85,45 +81,6 @@
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
-/* .gh-count {
-  position: relative;
-  display: none;
-  margin-left: 4px;
-  background-color: #fafafa;
-  border: 1px solid #d4d4d4;
-}
-.gh-count:hover,
-.gh-count:focus {
-  color: #4183C4;
-}
-.gh-count:before,
-.gh-count:after {
-  content: '';
-  position: absolute;
-  display: inline-block;
-  width: 0;
-  height: 0;
-  border-color: transparent;
-  border-style: solid;
-}
-.gh-count:before {
-  top: 50%;
-  left: -3px;
-  margin-top: -4px;
-  border-width: 4px 4px 4px 0;
-  border-right-color: #fafafa;
-}
-.gh-count:after {
-  top: 50%;
-  left: -4px;
-  z-index: -1;
-  margin-top: -5px;
-  border-width: 5px 5px 5px 0;
-  border-right-color: #d4d4d4;
-} */
-/* .github-btn-large {
-  height: 30px;
-} */
  .gh-btn{
   padding: 3px 10px 3px 8px;
   font-size: 16px;
