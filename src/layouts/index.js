@@ -60,7 +60,7 @@ ReactDOM.render(
   }
 
   onValueChange = v => {
-    console.log('onValueChange', v);
+    // console.log('onValueChange', v);
     this.setState({
       sourceCode: v,
     });
@@ -93,7 +93,7 @@ ReactDOM.render(
   };
 
   render() {
-    console.log('pages');
+    // console.log('pages');
 
     const { sourceCode, error } = this.state;
 
@@ -145,8 +145,8 @@ ReactDOM.render(
                 fontFamily: '"Fira code", "Fira Mono", monospace',
                 fontSize: 14,
                 color: 'rgb(136, 198, 190)',
-                minHeight: 300,
-                maxHeight: 600,
+                // minHeight: 300,
+                // maxHeight: 600,
                 overflow: 'auto',
               }}
               padding={10}
